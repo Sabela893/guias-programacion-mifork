@@ -140,7 +140,7 @@ Ejemplo de uso:
 ## 9. ¿Cuál es el punto de entrada en un programa en Java? ¿Qué es `static` y para qué vale? ¿Sólo se emplea para ese método `main`? ¿Para qué se combina con `final`?
 
 El punto de entrada de un programa Java es el método main estático
-public static void main(String[] args)
+    `public static void main(String[] args)`
 
  - **FINAL**: hace una clase, atributo o método inmutable
 
@@ -169,9 +169,8 @@ Java es compilado e interpretado, es decir, HÍBRIDO:
 ## 11. En el código anterior de la clase `Punto` ¿Qué es `new`? ¿Qué es un **constructor**? Pon un ejemplo de constructor en una clase `Empleado` que tenga DNI, nombre y apellidos
 
  - `new` es un operador que crea un objeto en memoria y debuelve una referencia a él. Entonces cuando se escribe:
-    Punto p = new Punto(3, 4);
-
- Lo que ocurre es que se reserva memoria en el HEAP para el nuevo objeto de tipo `Punto`, se llama al constructor y la referencia resultante se guarda en la variable p
+    `Punto p = new Punto(3, 4);`
+    Lo que ocurre es que se reserva memoria en el HEAP para el nuevo objeto de tipo `Punto`, se llama al constructor y la referencia resultante se guarda en la variable p
 
 Un **constructor** es un método especial cuya misión es inicializar un objeto recién creado.
     - Tiene el mismo nombre que la clase
@@ -277,7 +276,7 @@ Ejemplo de uso del método:
 
 ## 14. El paso del `Punto` como parámetro a un método, es **por copia** o **por referencia**, es decir, si se cambia el valor de algún atributo del punto pasado como parámetro, dichos cambios afectan al objeto fuera del método? ¿Qué ocurre si en vez de un `Punto`, se recibiese un entero (`int`) y dicho entero se modificase dentro de la función? 
 
-El paso de un punto `p` de tipo `Punto` es por referencia, es decir, los cambios que se produzcan en el método se ven reflejados fuera de él. Esto ocurre porque el método trabaja sobre el mismo objeto en memoria.
+El paso de un punto `p` de tipo `Punto` es por *referencia*, es decir, los cambios que se produzcan en el método se ven reflejados fuera de él. Esto ocurre porque el método trabaja sobre el mismo objeto en memoria.
 
 En cambio, un entero se pasa por valor, se copia el número y por lo tanto no se modifica el valor original.
 

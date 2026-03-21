@@ -226,7 +226,7 @@ Un bloque `finally` se ejecuta siempre, puede ir con o sin catch:
 
 **NO CONTROLADAS**: Son excepciones que *no es obligatorio capturar*. Representan errores de programación, normalmente internos y lógicos: índices fuera de rango, nulos, operaciones ilegales…
 
- - Derivan de RuntimeException.
+ - Derivan de `RuntimeException`.
  - Si ocurren, suelen indicar un bug o un mal uso de la API.
  - Pueden capturarse, pero no es obligatorio.
  
