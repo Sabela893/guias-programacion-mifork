@@ -132,9 +132,9 @@ Niveles de visibilidad en *Java*:
 
 ## 8. Responde: Los miembros de instancia privados de un objeto están ocultos para (a) otras clases o (b) otras instancias, aunque sean de la misma clase. Pon un ejemplo añadiendo un método `calcularDistanciaAPunto(Punto otro)` y explica la respuesta.
 
-a) otras clases  <---
+a. otras clases  <---
 
-b) otras instancias, aunque sean de la misma clase.
+b. otras instancias, aunque sean de la misma clase.
 
 ```jsx
     public class Punto {
@@ -236,7 +236,7 @@ Con `static`
 
 ## 14. Como sería un método factoría dentro de la clase `Punto` para construir un `Punto` a partir de dos coordenadas, pero que las redondee al entero más cercano. Escribe sólo el código del método, no toda la clase ¿Has usado `static`? 
 
-Debe ser un método *estático* (`static`) porque crea objetos sin necesitar una instancia previa. 
+Debe ser un método *ESTÁTICO* (`static`) porque crea objetos sin necesitar una instancia previa. 
 
 ```jsx
     public static Punto crearRedondeado(double x, double y) {

@@ -35,17 +35,17 @@ Java, Python, C++, C#
 **PROGRAMCIÓN ESTRUCTURADA**:
 Paradigma que propone organizar el código en bloques lógicos y controlados, evita saltos arbitrarios (goto). Inspiró a la claridad interna de los métodos en la programación a objetos (POO)
 Se basa en 3 estructuras de control:
- - `Secuencia`: instrucciones que se ejecutan una tras otra
- - `Selección`: decisiones (if, switch)
- - `Iteración`: bucles (for, while)
+ - *Secuencia*: instrucciones que se ejecutan una tras otra
+ - *Selección*: decisiones (if, switch)
+ - *Iteración*: bucles (for, while)
 
 **PROGRAMACIÓN MODULAR**:
-Paradigma que propone dividir un programa en partes independientes llamadas `MÓDULOS`. Esto anticipó la idea de clases y objetos como unidades autónomas.
+Paradigma que propone dividir un programa en partes independientes llamadas *MÓDULOS*. Esto anticipó la idea de clases y objetos como unidades autónomas.
 Principios clave:
- - `Descomposición`: divide problemas grandes en otros más pequeños
- - `Independencia`: cada módulo se desarrolla y prueba casi por separado
- - `Interfaces claras`: los módulos se comuncian mediante funciones o contratos bien definidos
- - `Reutilización`: un módulo puede utilizarse en otros programas
+ - *Descomposición*: divide problemas grandes en otros más pequeños
+ - *Independencia*: cada módulo se desarrolla y prueba casi por separado
+ - *Interfaces claras*: los módulos se comuncian mediante funciones o contratos bien definidos
+ - *Reutilización*: un módulo puede utilizarse en otros programas
 
 La POO añadió, además de esto, la encapsulación, herencia y polimorfismo
 
@@ -59,35 +59,35 @@ La POO añadió, además de esto, la encapsulación, herencia y polimorfismo
 
 ## 5. ¿Qué es una clase? ¿Es lo mismo que un objeto? ¿Qué es una instancia? ¿Todos los lenguajes orientados a objetos manejan el concepto de clase?
 
-Una clase no es lo mismo que un objeto. La `clase` (receta) sería la definición, mientras que el `objeto` (plato resultante) es la realidad creada a partir de la definición
+Una clase no es lo mismo que un objeto. La *CLASE* (receta) sería la definición, mientras que el *OBJETO* (plato resultante) es la realidad creada a partir de la definición
 
  - **CLASE**: es un molde o plantilla que describe cómo serán los objetos: qué datos tendrán (atributos) y qué podrán hacer (métodos). No ocupa memoria por sí misma; es una definición.
 
- - **INSTANCIA**: un objeto creado a partir de una clase. Decir “instancia” o “objeto” suele ser equivalente, aunque “instancia” `enfatiza el acto de creación`.
+ - **INSTANCIA**: un objeto creado a partir de una clase. Decir “instancia” o “objeto” suele ser equivalente, aunque “instancia” *enfatiza el acto de creación*.
 
 No todos los lenguajes orientados a objetos utilizan clases, pero sí la mayoría:
-    --> Basados en `clases`: Java, C++, C#, Python, Ruby
-    --> Basados en `prototipos`: JavaScript
+    --> Basados en *clases*: Java, C++, C#, Python, Ruby
+    --> Basados en *prototipos*: JavaScript
 
 ## 6. ¿Dónde se almacenan en memoria los objetos? ¿Es igual en todos los lenguajes? ¿Qué es la **recolección de basura**? 
 
 En la mayoría de lenguajes orientados a objetos modernos, los objetos se guardan en el **HEAP**, una zona de memoria destinada a datos dinámicos que viven más allá del ámbito inmediato de una función.
 
  - **Stack (pila)**: almacena variables locales, direcciones de retorno y, en muchos lenguajes, referencias a objetos, pero no los objetos en sí.
- --> `Almacena referencias o valores temporales`
+ --> *Almacena referencias o valores temporales*
 
  - **Heap (montículo)**: almacena los objetos reales, creados dinámicamente con new
- --> `Crea objetos que sobreviven más allá de la función`
+ --> *Crea objetos que sobreviven más allá de la función*
 
 La memoria no se gestiona igual en todos los lenguajes:
 
- - `Lenguajes con objetos siempre en el HEAP`: Java, Python, C#, Ruby. Los objetos se crean siempre en el heap y se accede a ellos mediante referencias.
+ - *Lenguajes con objetos siempre en el HEAP*: Java, Python, C#, Ruby. Los objetos se crean siempre en el heap y se accede a ellos mediante referencias.
 
- - `Lenguajes con objetos en STACK o HEAP`: C++.
- En el **STACK** (Coche miCoche;), se destruye al salir del ámbito --> `VIDA AUTOMÁTICA`.
- En el **HEAP** (Coche* p = new Coche();), requiere delete o smart pointers --> `VIDA DINÁMICA`
+ - *Lenguajes con objetos en STACK o HEAP*: C++.
+ En el **STACK** (Coche miCoche;), se destruye al salir del ámbito --> *VIDA AUTOMÁTICA*.
+ En el **HEAP** (Coche* p = new Coche();), requiere delete o smart pointers --> *VIDA DINÁMICA*
 
- - `Lenguajes basados en prototipos`: JavaScript.
+ - *Lenguajes basados en prototipos*: JavaScript.
  Los objetos también viven en el **HEAP**, pero su modelo no se basa en clases sino en PROTOTIPOS.
 
 La **RECOLECCIÓN DE BASURA** es un mecanismo automático que libera la memoria del heap ocupada por objetos que ya no están siendo utilizados por el programa. (Java, Python, C#, JavaScript, Ruby)
@@ -106,6 +106,7 @@ Esto permite que un mismo método se adapte a distintas necesidades sin cambiar 
 
 ## 8. Ejemplo mínimo de clase en Java, que se llame Punto, con dos atributos, x e y, con un método que se llame `calculaDistanciaAOrigen`, que calcule la distancia a la posición 0,0. Por sencillez, los atributos deben tener visibilidad por defecto. Crea además un ejemplo de uso con una instancia y uso del método
 
+```jsx
     public class Punto {
         int x;   // visibilidad por defecto
         int y;   // visibilidad por defecto
@@ -121,9 +122,11 @@ Esto permite que un mismo método se adapte a distintas necesidades sin cambiar 
             return Math.sqrt(x * x + y * y);
         }
     }
+```
 
 Ejemplo de uso:
 
+```jsx
     public class Main {
         public static void main(String[] args) {
             Punto p = new Punto(3, 4);   // instancia de Punto
@@ -131,7 +134,7 @@ Ejemplo de uso:
             System.out.println("Distancia al origen: " + distancia);
         }
     }
-
+```
 
 
 ## 9. ¿Cuál es el punto de entrada en un programa en Java? ¿Qué es `static` y para qué vale? ¿Sólo se emplea para ese método `main`? ¿Para qué se combina con `final`?
@@ -177,6 +180,7 @@ Un **constructor** es un método especial cuya misión es inicializar un objeto 
 
 Ejemplo clase `Empleado`:
 
+```jsx
     public class Empleado {
         String dni;
         String nombre;
@@ -189,6 +193,7 @@ Ejemplo clase `Empleado`:
             this.apellidos = apellidos;
         }
     }
+```
 
 
 ## 12. ¿Qué es la referencia `this`? ¿Se llama igual en todos los lenguajes? Pon un ejemplo del uso de `this` en la clase `Punto`
@@ -202,6 +207,7 @@ Ejemplo clase `Empleado`:
 
 Ejemplo de `this` en la clase `Punto`:
 
+```jsx
     public class Punto {
         int x;
         int y;
@@ -215,18 +221,23 @@ Ejemplo de `this` en la clase `Punto`:
             return Math.sqrt(this.x * this.x + this.y * this.y);
         }
     }
+```
 
 Ejemplo de uso:
+
+```jsx
     public class Main {
         public static void main(String[] args) {
             Punto p = new Punto(3, 4);
             System.out.println(p.calculaDistanciaAOrigen());
         }
     }
+```
 
 
 ## 13. Añade ahora otro nuevo método que se llame `distanciaA`, que reciba un `Punto` como parámetro y calcule la distancia entre `this` y el punto proporcionado
 
+```jsx
     public class Punto {
         int x;
         int y;
@@ -247,8 +258,11 @@ Ejemplo de uso:
             return Math.sqrt(dx * dx + dy * dy);
         }
     }
+```
 
 Ejemplo de uso del método:
+
+```jsx
     public class Main {
         public static void main(String[] args) {
             Punto p1 = new Punto(3, 4);
@@ -258,6 +272,7 @@ Ejemplo de uso del método:
             System.out.println("Distancia entre p1 y p2: " + d);
         }
     }
+```
 
 
 ## 14. El paso del `Punto` como parámetro a un método, es **por copia** o **por referencia**, es decir, si se cambia el valor de algún atributo del punto pasado como parámetro, dichos cambios afectan al objeto fuera del método? ¿Qué ocurre si en vez de un `Punto`, se recibiese un entero (`int`) y dicho entero se modificase dentro de la función? 
@@ -273,12 +288,14 @@ En cambio, un entero se pasa por valor, se copia el número y por lo tanto no se
     Punto@3f99bd52
  
  Existe en otros lenguajes:
-    - toString() --> Java, Kotlin, C#, JavaScript
-    - __ str __() y __ rpr __(): python
-    - operator<< --> C++
-    - to_s --> Ruby
+    - `toString()` --> Java, Kotlin, C#, JavaScript
+    - `__ str__()` y `__ rpr__()`: python
+    - `operator<<` --> C++
+    - `to_s` --> Ruby
 
 Ejemplo `toString()` en la clase `Punto`:
+
+```jsx
     public class Punto {
         int x;
         int y;
@@ -303,6 +320,7 @@ Ejemplo `toString()` en la clase `Punto`:
             return "(" + this.x + ", " + this.y + ")";
         }
     }
+```
 
 
 ## 16. Reflexiona: ¿una clase es como un `struct` en C? ¿Qué le falta al `struct` para ser como una clase y las variables de ese tipo ser instancias?
@@ -317,6 +335,7 @@ Una clase puede verse como un struct en C. Le faltaría:
 
 ## 17. Quitemos un poco de magia a todo esto: ¿Como se podría “emular”, con `struct` en C, la clase `Punto`, con su función para calcular la distancia al origen? ¿Qué ha pasado con `this`?
 
+```jsx
     #include <math.h>
 
     typedef struct {
@@ -328,8 +347,11 @@ Una clase puede verse como un struct en C. Le faltaría:
     double calculaDistanciaAOrigen(Punto *p) {
         return sqrt(p->x * p->x + p->y * p->y);
     }
+```
 
 Para utilizarlo:
+
+```jsx
     #include <stdio.h>
 
     int main() {
@@ -338,5 +360,6 @@ Para utilizarlo:
         printf("Distancia al origen: %f\n", d);
         return 0;
     }
+```
 
 En C `this` no existe, por lo que hay que pasar el objeto como parámetro (Punto *p)
