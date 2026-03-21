@@ -27,7 +27,7 @@ Por favor, escribe en impersonal las respuestas.
 
 ## 2. Cita cuatro lenguajes populares que permitan la programación orientada a objetos
 
-C++, Java, Python y C#
+Java, Python, C++, C#
 
 
 ## 3. Los paradigmas anteriores a la POO, ¿Qué es la **programación estructurada**? y, todavía mejor, ¿Qué es la **programación modular**?

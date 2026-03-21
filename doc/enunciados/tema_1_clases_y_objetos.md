@@ -17,42 +17,40 @@ Por favor, escribe en impersonal las respuestas.
 
 ## 1. ¿Cuáles son las cuatro características básicas de la programación orientada a objetos? Describe brevemente cada una
 
-## Respuesta
+### Respuesta
 
 
 ## 2. Cita cuatro lenguajes populares que permitan la programación orientada a objetos
 
-## Respuesta
+### Respuesta
 
 
 ## 3. Los paradigmas anteriores a la POO, ¿Qué es la **programación estructurada**? y, todavía mejor, ¿Qué es la **programación modular**?
 
-## Respuesta
-
+### Respuesta
 
 ## 4. ¿Qué tres elementos definen a un objeto en programación orientada a objetos?
 
-## Respuesta
-
+### Respuesta
 
 ## 5. ¿Qué es una clase? ¿Es lo mismo que un objeto? ¿Qué es una instancia? ¿Todos los lenguajes orientados a objetos manejan el concepto de clase?
 
-## Respuesta
+### Respuesta
 
 
 ## 6. ¿Dónde se almacenan en memoria los objetos? ¿Es igual en todos los lenguajes? ¿Qué es la **recolección de basura**? 
 
-## Respuesta
+### Respuesta
 
 
 ## 7. ¿Qué es un método? ¿Qué es la **sobrecarga de métodos**? 
 
-## Respuesta
+### Respuesta
 
 
 ## 8. Ejemplo mínimo de clase en Java, que se llame Punto, con dos atributos, x e y, con un método que se llame `calculaDistanciaAOrigen`, que calcule la distancia a la posición 0,0. Por sencillez, los atributos deben tener visibilidad por defecto. Crea además un ejemplo de uso con una instancia y uso del método
 
-## Respuesta
+### Respuesta
 
 
 ## 9. ¿Cuál es el punto de entrada en un programa en Java? ¿Qué es `static` y para qué vale? ¿Sólo se emplea para ese método `main`? ¿Para qué se combina con `final`?
