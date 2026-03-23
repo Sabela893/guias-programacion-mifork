@@ -18,7 +18,7 @@ Por favor, escribe en impersonal las respuestas.
 
 La **encapsulación** y la **ocultación de información** buscan proteger el estado interno de un objeto y controlar cómo se accede y modifica, de modo que el uso del objeto sea seguro, coherente y predecible.
 
-De este modo se evitan estados no válidos de los objetos y oculten los datos que no deben ser modificados desde fuera.
+De este modo se evitan estados no válidos de los objetos y ocultan los datos que no deben ser modificados desde fuera.
 
 Agrupa *datos* (atributos) y *comportamientos* (métodos) dentro de una misma entidad (la clase). Su objetivo es que el objeto gestione su propio estado.
 
@@ -27,7 +27,7 @@ Agrupa *datos* (atributos) y *comportamientos* (métodos) dentro de una misma en
 
 La **interfaz pública** de un objeto o clase es el conjunto de métodos y atributos accesibles desde fuera de esa clase. Es la “cara visible” del objeto. (Define qué puede hacerse con objetos)
 
- - Métodos públicos que permiten realizar operaciones (por ejemplo, `depositar()`, `calcularTotal()`, `mover()`).
+ - Métodos públicos que permiten realizar operaciones (por ejemplo: `depositar()`, `calcularTotal()`, `mover()`).
  - Atributos públicos (aunque en buena práctica suelen evitarse).
  - Constantes o tipos públicos definidos dentro de la clase.
 
